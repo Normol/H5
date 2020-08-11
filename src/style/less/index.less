@@ -1,0 +1,100 @@
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    &_icon {
+        margin-top: 265px;
+        margin-bottom: 285px;
+        width: 293px;
+        height: 310px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &_button {
+        width: 618px;
+        height: 106px;
+        background: url('../../img/anniu.png') no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        color: #202027;
+        .button_img {
+            width: 51px;
+            height: 43px;
+            margin-right: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &_tab{
+        width: 100%;
+    }
+    .tab_header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+    .tab_icon {
+        height: 84px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+        }
+    }
+    .nav-tabs {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        border: none;
+    }
+    .tabs_down_content {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 84px;
+        background-color: #bdc3c7;
+        width: 100%;
+        .tabs_down_item {
+            background-color: #ecf0f1;
+            flex: 1;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .tabs_down_content_flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+.nav-tabs>li.active>a {
+    border: none !important;
+}
